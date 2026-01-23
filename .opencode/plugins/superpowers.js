@@ -63,10 +63,9 @@ export const SuperpowersPlugin = async ({ client, directory }) => {
 
     const toolMapping = `**Tool Mapping for OpenCode:**
 When skills reference tools you don't have, substitute OpenCode equivalents:
-- \`TodoWrite\` → \`todowrite\`
 - \`Task\` tool with subagents → Use OpenCode's subagent system (@mention)
-- \`Skill\` tool → OpenCode's native \`skill\` tool
-- \`Read\`, \`Write\`, \`Edit\`, \`Bash\` → Your native tools
+- \`AskUserQuestion\` → \`question\`
+- \`Skill\`, \`TodoWrite\`, \`Read\`, \`Write\`, \`Edit\`, \`Bash\`, \`Grep\`, \`Glob\`, \`WebFetch\` → Your native tools (just lower case named)
 
 **Skills location:**
 Superpowers skills are in \`${configDir}/skills/superpowers/\`
